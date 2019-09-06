@@ -49,13 +49,14 @@ function buatRow(hasilkelompok){
 		const buattabel = document.createElement('div');
 		var ul = document.createElement('ul');
 		var buatjudul = document.createElement(`div`);
+		var buatcontainer = document.createElement(`div`);
 		
-		ul.innerHTML=`<div class="cf">`;
-		buattabel.innerHTML = `<div id="listcore`+i+`" class="listcore">`;
+		buatcontainer.innerHTML=`<div id="listcore" class="cf">`;
+		buattabel.innerHTML = `<div id="listcontainer`+i+`" class="listcore">`;
 		buatjudul.innerHTML = `<div class="h1" style="font-weight: bold;">Kelompok `+(i+1)+`</div>`;
 		document.getElementById('core2').appendChild(buattabel);
-		document.getElementById('listcore'+i).appendChild(buatjudul);
-		document.getElementById('listcore'+i).appendChild(ul);
+		document.getElementById('listcontainer'+i).appendChild(buatjudul);
+		document.getElementById('listcontainer'+i).appendChild(ul);
 
 		console.log(hasilkelompok);	
 
