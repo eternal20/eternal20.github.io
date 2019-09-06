@@ -40,9 +40,23 @@ function buatRow(hasilkelompok){
 	<div class="row cf" id="rowjadi">
 		<h1>Hasil Kelompok</h1>
 		<div id="core2">
+		<button class="tombol tangka" onclick="proses()">Acak lagi</button>
 	</div>
 	`;
 	document.getElementById('tambahRow').appendChild(buat);
+
+	var tombollihat = document.getElementById('idtombollihat');
+
+	if (tombollihat==null) {
+		const lihat = document.createElement('a');
+		lihat.href = "#tambahRow"
+		lihat.innerHTML = `
+		<button id="idtombollihat" class="tombol" style="color: black;">lihat hasil</button>
+		`;
+		document.getElementById('lihat').appendChild(lihat);
+	}
+	
+
 
 	
 
@@ -86,6 +100,7 @@ function buatRow(hasilkelompok){
 function proses(){
 
 	var element = document.getElementById('rowjadi');
+	
 	console.log(element);
 	
 	if (element!=null) {
