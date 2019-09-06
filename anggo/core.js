@@ -49,8 +49,9 @@ function buatRow(hasilkelompok){
 		const buattabel = document.createElement('div');
 		var ul = document.createElement('ul');
 		var buatjudul = document.createElement(`div`);
-
-		buattabel.innerHTML = `<div id="listcore`+i+`" class="listcore cf">`;
+		
+		ul.innerHTML=`<div class="cf">`;
+		buattabel.innerHTML = `<div id="listcore`+i+`" class="listcore">`;
 		buatjudul.innerHTML = `<div class="h1" style="font-weight: bold;">Kelompok `+(i+1)+`</div>`;
 		document.getElementById('core2').appendChild(buattabel);
 		document.getElementById('listcore'+i).appendChild(buatjudul);
