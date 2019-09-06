@@ -79,7 +79,7 @@
 						<div class="group-tombol">
 							<script type="text/javascript">
 								var tangka=''
-								for (var ta = 2; ta <= 8; ta++) {
+								for (var ta = 2; ta <= 10; ta++) {
 									tangka+='<button id='+ta+' onclick="banyakjumlah('+ta+')" value="'+ta+'" class="angka fokus">'+ta+'</button>';
 								}
 								document.write(tangka);
@@ -90,10 +90,12 @@
 								<button class="tombol tangka" onclick="proses()" href="#tambahRow">
 								Buat daftar anggota
 								</button>
+
 <!-- 							</a> -->
 						<button class="tombol treload" onclick="location.reload()">
 							Reset form
-						</button>	
+						</button>
+						<div id="lihat"></div>	
 					</div>
 				</div>
 			</div>
