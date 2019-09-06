@@ -1,0 +1,461 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   buat reset css
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Maven+Pro:400,700&display=swap');
+
+button {
+    outline: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body{
+	font: 16px/28px arial, sans-serif;
+	background-color: #FFF;
+	color: #333333;
+
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+	margin: 0.2rem;
+}
+
+h1, h2, h3, h4, h5, h6, p, span{
+	font-family: 'Maven Pro', sans-serif;
+
+}
+
+
+.container{
+
+	max-width: 100%;
+	height: auto;
+	margin-left: 8rem;
+	margin-right: 8rem;
+	background-color: none;
+}
+
+.contentjudul{
+	width: 100%;
+	padding: 1rem 9rem 0rem 9rem;
+	margin: auto;
+	box-sizing: border-box;
+	display: inline-block;
+}
+
+.header{
+	z-index: 1;
+	background: rgba(0,0,0,1);
+	position: fixed;
+	width: 100%;
+	transition: 0.3s;
+	height: auto;
+	/*box-shadow: -5px -5px 10px black;*/
+
+}
+
+.miniheader{
+	/*background-color: white;*/
+	opacity: 0.95;
+	position: fixed;
+	width: 100%;
+	transition: 0.3s;
+	/*box-shadow: -5px -5px 10px black;*/
+
+}
+
+.judul{
+	font-size: 3rem;
+	margin: 1rem 0rem 2rem 0rem;
+	font-weight: bold;
+	float: left;
+	color: white;
+
+}
+
+.contentjudul ul li{
+	float: right;
+	display: inline-block;
+	margin-right: 1rem;
+	margin-top: 1rem;
+	
+}
+
+.contentjudul a{
+	text-decoration: none;
+	color: white;
+	padding: 0.7rem;
+	border-radius: 0.7rem;
+	transition: 0.2s;
+
+
+}
+
+
+
+.contentjudul a:hover{
+	color: white;
+	background-color: black;
+	transition: 0.2s;
+}
+
+.hero{
+	height: 48rem; z-index: -1;
+	background-image: linear-gradient( 135deg, #79F1A4 10%, #0E5CAD 100%);
+	background-size: cover;
+	background-position: 0rem 0rem;
+	font-size: 3rem;
+	line-height: 3rem;
+	margin-bottom: 0.5rem;
+}
+
+.headlinecontainer{
+	padding-top: 10rem;
+}
+
+#isometric{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width:40rem;
+	height:40rem;
+	right: 0;
+	top: 8rem;
+}
+
+.headline{
+	width: 50%;
+	float: left;
+	margin-left: 9rem;
+}
+
+.mulai{
+	float: none;
+	margin-right: 9rem;
+	color: white;
+	height: 3em;
+	padding: 0.1em 1em;
+	border-radius: 2em;
+	font-size: 1.4rem;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	border: 0px solid #ccc;
+	transition: 0.5s;
+	background-image: linear-gradient( 135deg, #987689 10%, #0396FF 100%);
+	font-family: 'Maven Pro', sans-serif;
+}
+
+
+.main{
+	width: 60%;
+	padding: 1rem;
+	box-sizing: border-box;
+	float: left;
+}
+
+h1{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	font-weight: bold;
+
+}
+
+
+h2{
+	font-size: 1.5rem;
+	margin-bottom: 1rem;
+
+}
+
+.main .penulis{
+	font-size: 12pt;
+	margin-top: 5px;
+}
+
+.main .penulis a{
+	color: inherit;
+}
+
+.main p{
+	font-size: 1.2rem;
+}
+
+.row{
+	height: 30rem;
+	margin: 1rem;
+	margin-bottom: 5rem;
+}
+
+.listcore{
+	float: left;
+	display: inline-block;
+	height: 5rem;
+	width: 32%;
+	margin: 0.5em;
+	border-radius: 1rem;
+	background: white;
+	padding: 1em;
+	font-size:1.5em;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	font-family: 'Maven Pro', sans-serif;
+	border: 1px solid #ccc;
+	transition: 0.5s;
+}
+
+.sidebar{
+	width:30%;
+	float: left;
+	margin: 1rem;
+	box-sizing: border-box;
+}
+
+.sidebar img{
+	width: 100px;
+	float: left;
+	margin-right: 10px;
+}
+
+.sidebar h3{
+	font-weight: bold;
+}
+
+.sidebar p{
+	font: 0.8rem/1rem arial;
+}
+
+.clear{
+	clear: both;
+}
+
+.footer{
+	bottom: 0rem;
+	position: relative;
+	margin-top: 5rem;
+	background-color: #333;
+	padding: 1rem;	
+}
+
+.footer .copyright{
+	text-align: center;
+	color: white;
+}
+
+.scroll{
+	z-index: +999;
+
+}
+
+@media screen and (max-width:720px){
+
+	.main{
+		float: none;
+		width: 100%;
+		margin: auto;
+	}
+
+	.contentjudul{
+		padding: 1rem 1.5rem 0rem 1.5rem;
+		margin-bottom: 0rem;
+	}
+
+	.contentjudul ul li{
+		margin-top: 0.5rem;
+	}
+
+	.headlinecontainer{
+		padding-top: 0rem;
+	}
+
+	.headline{
+		float: left;
+		margin: 8rem 1rem 0rem 1rem;
+		width: 80%;
+	}
+
+	.headline h1{
+		font-weight: bold;
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		line-height: 2.5rem;
+	}
+
+	.headline p{
+		font-size: 2rem;
+		margin-bottom: 1rem;
+		line-height: 2rem;
+	}
+
+	.sidebar{
+		float: none;
+		width: 80%;
+		margin: auto;
+	}
+	.container{
+		margin: auto;
+	}
+
+	.row{
+		height: auto;
+
+	}
+
+	.mulai{
+
+		margin-top: 1rem;
+	}
+	.listcore{
+		width: 79%;
+		margin: 0.5rem 0.8rem 0.5rem 0.8rem;
+	}
+	
+	#isometric{
+	position: absolute;
+	padding: 0;
+	margin: 0;
+	width:100%;
+	height:auto;
+	right: 0;
+	top:22.5rem;
+}
+
+
+}
+@media screen and (max-width:480px){
+	nav li, nav a{
+		display: block;
+	}
+}
+
+input{
+	margin: 0.5em;
+	height: 2em;
+	padding: 0.1em 1em;
+	border-radius: 2em;
+	font-size: 1.2em;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	font-family: inherit;
+	border: 1px solid #ccc;
+	transition: 0.5s;
+	outline: none;
+}
+
+.angka{
+	height: 3.5rem;
+	width: 3.5rem;
+	margin: 0.2em;
+	border-radius: 1rem;
+	background: white;
+	padding: 0.1em;
+	border-radius: 2em;
+	font-size:1.5em;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	font-family: 'Maven Pro', sans-serif;
+	border: 1px solid #ccc;
+	transition: 0.5s;
+}
+
+.fokus:focus{
+	color: white;
+	background: linear-gradient(0deg, rgba(34,193,195,1) 0%, rgba(205,168,89,1) 100%);
+}
+
+.tombol{
+	color: white;
+	margin: 0.5em;
+	height: 3em;
+	padding: 0.1em 1em;
+	border-radius: 2em;
+	font-size: 1.3rem;
+	box-shadow: 0 1px 5px rgba(0,0,0,0.2);
+	border: 1px solid #ccc;
+	transition: 0.5s;
+	font-family: 'Maven Pro', sans-serif;
+}
+
+.tangka{
+	background-image: linear-gradient( 135deg, #ABDCFF 10%, #0396FF 100%);
+}
+
+.treload{
+	background: linear-gradient(27deg, rgba(255,158,181,1) 0%, rgba(255,96,96,1) 81%);
+}
+
+.tombol:hover{
+	font-size: 1.4em;
+}
+
+.zoom{
+	font-size: 1rem;
+}
+
+.center{
+	display: block;
+	text-align: center;
+}
