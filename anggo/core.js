@@ -56,10 +56,6 @@ function buatRow(hasilkelompok){
 		document.getElementById('lihat').appendChild(lihat);
 	}
 	
-
-
-	
-
 	for (var i = 0; i < hasilkelompok.length; i++) {
 
 		const buattabel = document.createElement('div');
@@ -70,22 +66,16 @@ function buatRow(hasilkelompok){
 			buatcontainer.innerHTML = `<div id="listcore`+i+`" class="cf">`;
 				document.getElementById('buatcontainer'+i).appendChild(buatcontainer);
 
-
 		var buatjudul = document.createElement(`div`);
 		var ul = document.createElement('ul');
+		var br = document.createElement('br');
 			buatjudul.innerHTML = `<div class="h1" style="font-weight: bold;">Kelompok `+(i+1)+`</div>`;
 				document.getElementById('listcore'+i).appendChild(buatjudul);
 				document.getElementById('listcore'+i).appendChild(ul);
-
-		console.log(hasilkelompok);	
-
-		
+				document.getElementById('listcore'+i).appendChild(br);
 
 		hasilkelompok[i].forEach(
 			function(name){
-
-				
-
 				var li = document.createElement('li');
 				ul.appendChild(li);
 				li.innerHTML += name;
