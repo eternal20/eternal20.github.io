@@ -198,7 +198,7 @@ h1, h2, h3, h4, h5, h6, p, span{
 }
 
 .mulai{
-	float: none;
+	float: right;
 	margin-right: 9rem;
 	color: white;
 	height: 3em;
@@ -369,6 +369,7 @@ h2{
 	.mulai{
 
 		margin-top: 1rem;
+		float: both;
 	}
 	.listcore{
 		width: 79%;
