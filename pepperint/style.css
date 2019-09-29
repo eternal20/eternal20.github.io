@@ -225,6 +225,7 @@ body {
 }
 
 .header-click{
+	padding-top: 3rem;
 	width: 100%;
 	height: 100%;
 	position: fixed;
