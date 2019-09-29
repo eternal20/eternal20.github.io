@@ -158,7 +158,7 @@ a:hover{
 
 .navbar-menu{
 	margin: 0.7em 0.5em;
-	float: left;
+	float: right;
 }
 
 .navbar-menu ul li{
@@ -248,7 +248,7 @@ body {
 }
 
 .navbar-menu-show ul li{
-	font-size: 2rem;
+	font-size: 1.8rem;
 	display: block;
 	margin: 0.2em 0.5em;
 	float: right;
