@@ -63,6 +63,11 @@ a:hover{
 	transition: 0.5s;
 }
 
+
+h1{
+	font-size: 2em;
+}
+
 .button-highlight {
 	display: none;
 	background: black;
@@ -140,8 +145,8 @@ a:hover{
 	height: auto;
 	width: 100%;
 	position: fixed;
-	backdrop-filter: saturate(180%) blur(20px);
-	background: rgba(0,0,0,0.5);
+/*	backdrop-filter: saturate(180%) blur(20px);*/
+	background: rgba(0,0,0,0.9);
 	transition: 0.5s;
 }
 
@@ -163,7 +168,7 @@ a:hover{
 
 .navbar-menu ul li{
 	display: inline-block;
-	margin: 0 1em;
+	margin: 0 1.5em;
 }
 
 .navbar-right{
@@ -172,12 +177,24 @@ a:hover{
 }
 
 body {
+	width: screen;
 	height: 100%;
 	/*background: #7b4397;   fallback for old browsers */
 	background: -webkit-linear-gradient(to right, #dc2430, #7b4397);  /* Chrome 10-25, Safari 5.1-6 */
 	background-image: linear-gradient(30deg, #dc2430 0%, #7b4397 100%);  W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
 /*	background-image: url(img/hero2.jpg);*/
 /*	background-size: cover;*/
+}
+
+img{
+	box-shadow: 0px 5px 20px black;
+	width: 100%;
+	height: auto;
+
+}
+
+.img-container{
+	padding: 2em;
 }
 
 .headline{
@@ -191,19 +208,49 @@ body {
 	
 }
 
-.container{
+.hero-container{
 	height: 35rem;
 	padding-top: 10rem; 
 /*	height: auto;*/
 }
 
 .row-container {
-	margin: 1rem 6rem;
+	margin: 1rem 6rem 5rem 6rem;
 	text-align: center;
 }
 
+.content-container{
+/*	background-color: white;*/
+	color: black;
+	padding-top: 5em;
+}
+
+.content-container-right{
+	padding: 1em;
+	width: 45%;
+	float: right;
+	text-align: left;
+}
+
+.content-container-left{
+	padding: 1em;
+	width: 45%;
+	float: left;
+	text-align: right;
+}
+
+.footer-container{
+	margin: 1rem 6rem;
+
+}
+
+.footer-container ul li{
+	margin: 0 1em;
+
+}
+
 .footer{
-	height: 15rem;
+	padding: 0 5em;
 	background-color: black;
 
 }
@@ -229,8 +276,8 @@ body {
 	width: 100%;
 	height: 100%;
 	position: fixed;
-	backdrop-filter: saturate(180%) blur(20px);
-	background: rgba(0,0,0,0.5);
+/*	backdrop-filter: saturate(180%) blur(20px);*/
+	background: rgba(0,0,0,0.9);
 	transition: 0.5s;
 }
 
@@ -275,6 +322,10 @@ body {
 	margin: 1rem 1rem;
 }
 
+.footer-container{
+	margin: 0.5rem 0.5rem;
+
+}
 
 }
 

@@ -11,7 +11,9 @@ function myFunction() {
 
 const sidebar = document.getElementById("showSidebar");
 
-
+function scroll(){
+	document.getElementById("hero-container").setAttribute("style", "height: auto;") ;
+}
 
 function showSidebar() {
 	document.getElementById("header").className = "header-click";
